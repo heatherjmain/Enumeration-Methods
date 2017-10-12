@@ -46,6 +46,21 @@ var arrayTasks = {
 		return duplicatesArray;
 	},
 
+	// // OR, can be solved using a hash
+	// findDuplicates: function (arr) {
+	// 	var counts = {};
+	//
+	// 	var newSolution = arr.filter(function(item) {
+	// 		if (!counts[item]) {
+	// 			counts[item] = 1
+	// 		} else {
+	// 			counts[item] += 1
+	// 			if (counts[item] === 2) return true
+	// 		}
+	// 	});
+	// 	return newSolution;
+	// },
+
 
 
 	removeAndClone: function (arr, valueToRemove) {
@@ -88,6 +103,16 @@ var arrayTasks = {
 		}, 0);
 		return sum;
 	}
+
+// // OR, a smaller solution
+// 	sumOfAllEvenNumbersSquared: function (arr) {
+// 		return arr.reduce(function(total, number) {
+// 			if (number % 2 === 0) {
+// 				return total + Math.pow(number, 2)
+// 			}
+// 			return total
+// 		}, 0)
+// 	}
 }
 
 
